@@ -1,26 +1,45 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --font-great-vibes: var(--font-great-vibes);
+    --font-cormorant: var(--font-cormorant);
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 }
 
+@layer utilities {
+  .font-script {
+    font-family: var(--font-great-vibes);
+  }
+  .font-serif {
+    font-family: var(--font-cormorant);
+  }
+}
+
+/* Custom styles */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: #1a1a1a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.025em;
+}
+
+/* Navigation and links */
+a {
+  transition: all 0.3s ease;
+}
+
+/* Improved spacing for mobile */
+@media (max-width: 640px) {
+  .space-x-6 > * + * {
+    margin-left: 1rem;
+  }
+  
+  h1, h2 {
+    font-size: 90%;
+  }
 }
