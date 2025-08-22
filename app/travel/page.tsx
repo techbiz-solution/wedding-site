@@ -6,7 +6,7 @@ export default function Travel() {
       <div className="text-center mb-12 md:mb-16">
         <h2 className="font-serif text-3xl md:text-4xl text-gray-800 mb-6 font-light">Travel & Accommodation</h2>
         <p className="font-sans text-base md:text-lg text-gray-600 mb-8 leading-relaxed max-w-2xl">
-          We've gathered all the travel information you'll need to join us in Bangkok for our special day.
+          We&apos;ve gathered all the travel information you&apos;ll need to join us in Bangkok for our special day.
         </p>
         <div className="w-20 h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent mx-auto"></div>
       </div>
